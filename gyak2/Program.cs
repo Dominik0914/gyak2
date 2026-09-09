@@ -1,8 +1,16 @@
 ﻿Console.WriteLine("Add meg a termék nevét:");
 string termek = Console.ReadLine();
+Console.WriteLine("Add meg a termék árát:");
+int termekar = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Add meg a termék darabszámát:");
 int termekdb = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Add meg a termék nevét:");
 string termek2 = Console.ReadLine();
+Console.WriteLine("Add meg a termék árát:");
+int termekar2 = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Add meg a termék darabszámát:");
 int termekdb2 = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine($"A termékek nevei: {termek}, {termek2}");
+Console.WriteLine($"összesen: {termekdb + termekdb2} darab");
+int osszar = (termekar * termekdb) + (termekar2 * termekdb2);
+int kedvezmeny = osszar / 10;
