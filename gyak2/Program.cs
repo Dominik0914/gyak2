@@ -14,3 +14,11 @@ Console.WriteLine($"A termékek nevei: {termek}, {termek2}");
 Console.WriteLine($"összesen: {termekdb + termekdb2} darab");
 int osszar = (termekar * termekdb) + (termekar2 * termekdb2);
 int kedvezmeny = osszar / 10;
+if (osszar > 10000)
+{
+    Console.WriteLine($"ár: {osszar - kedvezmeny} Ft kedvezménnyel");
+}
+else
+{
+    Console.WriteLine($"ár: {osszar} Ft kedvezménynélkül");
+}
