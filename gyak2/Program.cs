@@ -22,3 +22,8 @@ else
 {
     Console.WriteLine($"ár: {osszar} Ft kedvezménynélkül");
 }
+int kellék = 10000 - osszar;
+if (osszar < 10000)
+{
+    Console.WriteLine($"Még {kellék} Ft kell a kedvezményhez");
+}
